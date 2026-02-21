@@ -1,0 +1,182 @@
+/* Go4Christ Fellowship — site styles */
+
+:root {
+  --bg: #f7f5f1;
+  --bg-alt: #ebe8e2;
+  --text: #1c1c1c;
+  --text-muted: #4a4a4a;
+  --accent: #2d5016;
+  --accent-dark: #1f3810;
+  --border: #d4d0c8;
+  --max-width: 42rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Header */
+.site-header {
+  padding: 2rem 0 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid var(--border);
+}
+
+.logo {
+  margin: 0;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(1.75rem, 5vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.logo-four {
+  color: var(--accent);
+  font-style: italic;
+}
+
+.tagline {
+  margin: 0.35rem 0 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Hero */
+.hero {
+  padding: 2.5rem 0;
+  text-align: center;
+}
+
+.hero-text {
+  margin: 0;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(1.15rem, 3vw, 1.35rem);
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+/* Sections */
+.content-section {
+  padding: 2.5rem 0;
+}
+
+.content-section.alt-bg {
+  background: var(--bg-alt);
+}
+
+.content-section h2 {
+  margin: 0 0 1.25rem;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+.content-section h3 {
+  margin: 2rem 0 0.75rem;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.content-section h3:first-of-type {
+  margin-top: 1.5rem;
+}
+
+.content-section p {
+  margin: 0 0 1rem;
+}
+
+.name-list,
+.how-list {
+  margin: 0 0 1rem;
+  padding-left: 1.5rem;
+}
+
+.name-list li,
+.how-list li {
+  margin-bottom: 0.75rem;
+}
+
+.four-actions {
+  margin: 0 0 1rem;
+  padding-left: 1.5rem;
+}
+
+.four-actions li {
+  margin-bottom: 0.85rem;
+}
+
+.vision-quote,
+.scripture {
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid var(--accent);
+  background: rgba(45, 80, 22, 0.06);
+  font-style: italic;
+  color: var(--text);
+}
+
+.vision-quote {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 1.05rem;
+}
+
+.scripture cite {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: var(--accent-dark);
+}
+
+.mission-statement {
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+/* Footer */
+.site-footer {
+  padding: 2rem 0;
+  margin-top: 1rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (min-width: 600px) {
+  .content-section {
+    padding: 3rem 0;
+  }
+
+  .vision-quote,
+  .scripture {
+    padding: 1.25rem 1.5rem;
+  }
+}
